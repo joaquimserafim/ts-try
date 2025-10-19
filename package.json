@@ -1,0 +1,58 @@
+{
+	"name": "@joaquimserafim/ts-try",
+	"version": "0.1.0",
+	"description": "Rust-style Result type and 'try!'/'?' operator for TypeScript/Node.js to eliminate try...catch blocks and enforce explicit error handling.",
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist",
+		"README.md",
+		"LICENSE"
+	],
+	"scripts": {
+		"build": "tsdown",
+		"test": "vitest",
+		"coverage": "vitest run --coverage",
+		"prepublishOnly": "pnpm run build",
+		"prepare": "husky",
+		"format": "biome check .",
+		"format:fix": "biome check --write .",
+		"format:ci": "biome check $(git diff --cached --name-only --diff-filter=ACMR | sed 's| |\\ |g') --write --ignore-unknown"
+	},
+	"keywords": [
+		"result",
+		"result type",
+		"ok err",
+		"ok error",
+		"try catch alternative",
+		"try async",
+		"try sync",
+		"typescript",
+		"typescript result",
+		"typescript error handling",
+		"functional programming",
+		"error handling",
+		"explicit error handling",
+		"rust-style",
+		"rust result",
+		"rust-like error handling",
+		"safe async",
+		"no try catch"
+	],
+	"author": "@joaquimserafim",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/joaquimserafim/ts-try.git"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.2.6",
+		"@types/node": "^22.13.14",
+		"@vitest/coverage-v8": "3.0.9",
+		"husky": "^9.1.7",
+		"tsdown": "^0.15.8",
+		"typescript": "^5.8.2",
+		"vitest": "^3.0.9"
+	}
+}

@@ -1,2 +1,2 @@
+pnpm coverage
 pnpm format:ci
-pnpm test run

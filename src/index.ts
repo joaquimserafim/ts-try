@@ -37,7 +37,7 @@ function err<E extends Error>(error: E): Err<E> {
  * @returns A Promise that resolves to a Result tuple [error, value].
  */
 export async function tryAsyncFn<T, E extends Error = Error>(
-	promise: Promise<T>
+	promise: Promise<T>,
 ): Promise<Result<T, E>> {
 	try {
 		const value = await promise;
@@ -59,7 +59,7 @@ export async function tryAsyncFn<T, E extends Error = Error>(
  * @returns A Result tuple [error, value].
  */
 export function trySyncFn<T, E extends Error = Error>(
-	fn: () => T
+	fn: () => T,
 ): Result<T, E> {
 	try {
 		return ok(fn());

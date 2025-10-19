@@ -6,7 +6,15 @@
 		"useIgnoreFile": false
 	},
 	"files": {
-		"ignoreUnknown": false
+		"ignoreUnknown": false,
+		"includes": [
+			"src/**",
+			"*.ts",
+			"*.js",
+			"*.json",
+			"!vitest.config.ts",
+			"!tsdown.config.ts"
+		]
 	},
 	"formatter": {
 		"enabled": true,

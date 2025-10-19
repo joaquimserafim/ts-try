@@ -1,7 +1,7 @@
 {
 	"name": "@joaquimserafim/ts-try",
 	"version": "0.1.0",
-	"description": "Rust-style Result type and 'try!'/'?' operator for TypeScript/Node.js to eliminate try...catch blocks and enforce explicit error handling.",
+	"description": "Lightweight Rust-inspired Result type and helpers for TypeScript to replace try/catch with explicit, type-safe error handling.",
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
 	"types": "dist/index.d.ts",

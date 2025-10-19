@@ -6,6 +6,7 @@ A tiny, dependency‑free set of **Result** types and helpers for TypeScript tha
 [![pnpm](https://img.shields.io/badge/pnpm-ready-yellow.svg)](https://pnpm.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 [![Biome Lint](https://github.com/joaquimserafim/ts-try/actions/workflows/lint.yml/badge.svg)](https://github.com/joaquimserafim/ts-try/actions/workflows/lint.yml)
+[![Release](https://github.com/joaquimserafim/ts-try/actions/workflows/release.yml/badge.svg)](https://github.com/joaquimserafim/ts-try/actions/workflows/release.yml)
 
 ---
 
